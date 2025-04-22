@@ -691,7 +691,7 @@
     <usecaptcha><![CDATA[E]]></usecaptcha>
     <usetokens><![CDATA[N]]></usetokens>
     <bounce_email><![CDATA[inherit]]></bounce_email>
-    <attributedescriptions><![CDATA[{"firstname":{"encrypted":"N"},"lastname":{"encrypted":"N"},"email":{"encrypted":"N"},"attribute_1":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_2":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_3":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_4":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_5":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_6":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""}}]]></attributedescriptions>
+    <attributedescriptions><![CDATA[{"firstname":{"encrypted":"N"},"lastname":{"encrypted":"N"},"email":{"encrypted":"N"},"attribute_1":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_2":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_3":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_4":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_5":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_6":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""},"attribute_7":{"description":"","mandatory":"N","encrypted":"N","show_register":"N","cpdbmap":""}}]]></attributedescriptions>
     <emailresponseto><![CDATA[inherit]]></emailresponseto>
     <emailnotificationto><![CDATA[inherit]]></emailnotificationto>
     <tokenlength><![CDATA[15]]></tokenlength>
@@ -823,7 +823,7 @@ Sincerely,
 
 {ADMINNAME}]]></surveyls_email_confirm>
     <surveyls_dateformat><![CDATA[9]]></surveyls_dateformat>
-    <surveyls_attributecaptions><![CDATA[{"attribute_1":"","attribute_2":"","attribute_3":"","attribute_4":"","attribute_5":"","attribute_6":""}]]></surveyls_attributecaptions>
+    <surveyls_attributecaptions><![CDATA[{"attribute_1":"","attribute_2":"","attribute_3":"","attribute_4":"","attribute_5":"","attribute_6":"","attribute_7":""}]]></surveyls_attributecaptions>
     <email_admin_notification_subj><![CDATA[Response submission for survey {SURVEYNAME}]]></email_admin_notification_subj>
     <email_admin_notification><![CDATA[Hello,
 
