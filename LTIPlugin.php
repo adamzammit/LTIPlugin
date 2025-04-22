@@ -108,43 +108,43 @@ class LTIPlugin extends PluginBase
             'type' => 'string',
             'default' => 'resource_link_id',
             'label' => 'REQUIRED: The LTI attributes that stores the unique Resource ID - this is how the LTI system identifies the resources that contains the LTI Consumer (eg the Unit)',
-            'help' => 'For openEdX it is probably resource_link_id, for Canvas it is probably custom_canvas_course_id. This maps to ATTRIBUTE_3 in your participant table'
+            'help' => 'For openEdX, Blackboard it is probably resource_link_id, for Canvas it is probably custom_canvas_course_id. This maps to ATTRIBUTE_3 in your participant table'
         ],
         'sUserIdAttribute' => [
             'type' => 'string',
             'default' => 'user_id',
             'label' => 'REQUIRED: The LTI attributes that stores the unique User ID',
-            'help' => 'For openEdX it is probably user_id, for Canvas it is probably custom_canvas_user_id. This maps to ATTRIBUTE_4 in your participant table'
+            'help' => 'For openEdX, Blackboard it is probably user_id, for Canvas it is probably custom_canvas_user_id. This maps to ATTRIBUTE_4 in your participant table'
         ],
         'sUrlAttribute' => [
             'type' => 'string',
             'default' => 'launch_presentation_return_url',
             'label' => 'Optional: The LTI attributes that stores the return URL',
-            'help' => 'Leave blank for no data to be stored. For Canvas it appears to be launch_presentation_return_url. This maps to ATTRIBUTE_1 in your participant table'
+            'help' => 'Leave blank for no data to be stored. For Canvas and Blackboard it appears to be launch_presentation_return_url. This maps to ATTRIBUTE_1 in your participant table'
         ],
         'sCourseTitleAttribute' => [
             'type' => 'string',
             'default' => 'context_title',
             'label' => 'Optional: The LTI attributes that stores the course title',
-            'help' => 'Leave blank for no data to be stored. For openEdX and Canvas it appears to be context_title. This maps to ATTRIBUTE_2 in your participant table'
+            'help' => 'Leave blank for no data to be stored. For openEdX, Blackboard and Canvas it appears to be context_title. This maps to ATTRIBUTE_2 in your participant table'
         ],
         'sEmailAttribute' => [
             'type' => 'string',
             'default' => 'lis_person_contact_email_primary',
             'label' => 'Optional: The LTI attributes that stores the participants email address',
-            'help' => 'Leave blank for no data to be stored. For openEdX and Canvas it appears to be lis_person_contact_email_primary. This maps to email in your participant table'
+            'help' => 'Leave blank for no data to be stored. For openEdX, Blackboard and Canvas it appears to be lis_person_contact_email_primary. This maps to email in your participant table'
         ],
         'sFirstNameAttribute' => [
             'type' => 'string',
             'default' => 'lis_person_name_given',
             'label' => 'Optional: The LTI attributes that stores the first name of the participant',
-            'help' => 'Leave blank for no data to be stored. For openEdX and Canvas it appears to be lis_person_name_given. This maps to firstname in your participant table'
+            'help' => 'Leave blank for no data to be stored. For openEdX, Blackboard and Canvas it appears to be lis_person_name_given. This maps to firstname in your participant table'
         ],
         'sLastNameAttribute' => [
             'type' => 'string',
             'default' => 'lis_person_name_family',
             'label' => 'Optional: The LTI attributes that stores the last name of the participant',
-            'help' => 'Leave blank for no data to be stored. For openEdX and Canvas it appears to be lis_person_name_family. This maps to lastname in your participant table'
+            'help' => 'Leave blank for no data to be stored. For openEdX, Blackboard and Canvas it appears to be lis_person_name_family. This maps to lastname in your participant table'
         ],
         'sResultSourceAttribute' => [
             'type' => 'string',

@@ -1,5 +1,5 @@
 # LTIPlugin
-LimeSurvey Plugin that allows LimeSurvey to act as an LTI provider for tools such as Moodle, Canvas and openEdX. LimeSurvey will have access to the LMS course name and course and student identifier and allow the completion of a survey.
+LimeSurvey Plugin that allows LimeSurvey to act as an LTI provider for tools such as Moodle, Canvas, openEdX and Blackboard. LimeSurvey will have access to the LMS course name and course and student identifier and allow the completion of a survey.
 This plugin can also be used to return a grade/score/result back to the LMS based on a LimeSurvey expression. Therefore this plugin can be used to administer an exam or quiz in LimeSurvey which calculates a score and returns it automatically to the LMS.
 
 ## Installation
@@ -11,7 +11,7 @@ git clone --recursive https://github.com/adamzammit/LTIPlugin.git LTIPlugin
 
 ## Requirements
 
-- LimeSurvey version 3.x, 4.x, 5.x
+- LimeSurvey version 3.x, 4.x, 5.x, 6.x
 - Surveys need to be activated, with a participant table set up with at least 4 attributes avaiable, 7 attributes if you want to return a grade/result (the plugin will use the first 4 or 7 attributes for LTI related data)
 - If your LTI Provider is running on HTTPS, then LimeSurvey must run over HTTPS also
 
@@ -101,6 +101,28 @@ If you have recieved a "CSRF Token" error in LimeSurvey you may need to set "LTI
 7. The "LTI URL" is the URL that appears on the "Settings for plugin LTI Plugin" page for your survey
 8. Other settings can remain as default
 9. Click "Save" and you will now be able to access LimeSurvey from within
+
+### Configuration (Blackboard)
+
+1. Visit the "Administrator Panel", then under "Integrations" select "LTI Tool Providers"
+2. Choose the tab "Manage Global Properties"
+3. Ensure "Allow configured tool providers to post grades" is set to "Yes". Submit to save this configuration.
+4. Choose the tab "Register LTI 1.1 Provider"
+5. Add the domain name of your LimeSurvey installation in "Provider Domain". For "Default Configuration" choose "Set separately for each link". For "Policies" enable "Role in Course", "Name", "Email Address" in "User fields to send". Submit to save this configuration
+
+### Usage (Blackboard)
+
+1. In course content, create a new item "Teaching tools with LTI Connection"
+2. The "Configuration URL" is the URL that appears on the "Settings for plugin LTI Plugin" page for your survey
+3. Enter the Key as the "Key" and the "Secret" as the "Security Token"
+4. If you want to return a result (grade) from LimeSurvey check the box "Create gradebook entry for this item"
+5. Click "Save" to make the resource available in the course
+
+If you have received a "CSRF Token" error in LimeSurvey you may need to set "Open in new window" under LTI Link Details to overcome this.
+
+## Common issues
+
+1. If you get a "Bad Signature" error or similar and your service is behind a reverse proxy for SSL, please ensure that the headers X-Forwarded-Proto is set to "https" and X-Forwarded-Port is set to "443" to ensure LimeSurvey will know it is running in an SSL environment
 
 ## Security
 
