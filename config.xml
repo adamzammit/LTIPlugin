@@ -4,12 +4,12 @@
         <name>LTIPlugin</name>
         <type>plugin</type>
         <creationDate>2020-08-27</creationDate>
-        <lastUpdate>2025-04-16</lastUpdate>
+        <lastUpdate>2026-09-16</lastUpdate>
         <author>Adam Zammit</author>
         <authorUrl>https://acspri.org.au/</authorUrl>
         <authorEmail>software@acspri.org.au</authorEmail>
         <supportUrl>https://acspri.org.au/</supportUrl>
-        <version>1.2.0</version>
+        <version>1.3.0</version>
         <license>GNU General Public License v3.0</license>
         <description><![CDATA[Make LimeSurvey an LTI provider for tools that support the LTI API such as Canvas, OpenEdX and Blackboard]]></description>
     </metadata>
@@ -18,5 +18,6 @@
         <version>4.0</version>
         <version>5.0</version>
         <version>6.0</version>
+        <version>7.0</version>
     </compatibility>
 </config>
