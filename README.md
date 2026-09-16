@@ -11,7 +11,7 @@ git clone --recursive https://github.com/adamzammit/LTIPlugin.git LTIPlugin
 
 ## Requirements
 
-- LimeSurvey version 3.x, 4.x, 5.x, 6.x
+- LimeSurvey version 3.x, 4.x, 5.x, 6.x, 7.x
 - Surveys need to be activated, with a participant table set up with at least 4 attributes avaiable, 7 attributes if you want to return a grade/result (the plugin will use the first 4 or 7 attributes for LTI related data)
 - If your LTI Provider is running on HTTPS, then LimeSurvey must run over HTTPS also
 
